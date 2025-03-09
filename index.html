@@ -1,497 +1,432 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Index</title>
+    <title>چرم سار|sar leather</title>
+    <meta name="description" content="Discover premium quality handcrafted leather products including bags, wallets, belts and shoes for men and women. Ethically sourced materials with worldwide shipping.">
+    <meta name="keywords" content="leather products, leather bags, leather wallets, leather belts, leather shoes, handcrafted leather, premium leather, چرم سار, چرم , محصولات چرمی">
+    <meta name="author" content="sar Leather">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.sarleather.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sarleather.com/">
+    <meta property="og:title" content="Leather Craft - Premium Handcrafted Leather Products">
+    <meta property="og:description" content="Discover premium quality handcrafted leather products including bags, wallets, belts and shoes for men and women.">
+    <meta property="og:image" content="https://www.sarleather.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sarleather.com/">
+    <meta property="twitter:title" content="Leather Craft - Premium Handcrafted Leather Products">
+    <meta property="twitter:description" content="Discover premium quality handcrafted leather products including bags, wallets, belts and shoes for men and women.">
+    <meta property="twitter:image" content="https://www.sarleather.com/images/twitter-image.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Leather Craft",
+      "url": "https://www.leathercraft.com",
+      "logo": "https://www.leathercraft.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Persian"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/leathercraft",
+        "https://www.instagram.com/leathercraft",
+        "https://twitter.com/leathercraft"
+      ]
+    }
+    </script>
 </head>
-<body class="body">
-  <!-- <div class="loader">
-    <img src="{% static 'images/loading.gif' %}" alt="" srcset="">
-  </div> -->
-    <div id="container_menu" class="container_menu">
-            <div class="menu_sm_bar">
-                <span id="icon_close_menu_sm_bar"><i class="fa fa-close" style="font-size:24px"></i></span>
-                <ul>
-                    <a href="#"><li>کفش زنانه</li></a>
-                    <a href="#"><li>کفش مردانه</li></a>
-                    <a href="#"><li>کیف زنانه</li></a>
-                    <a href="#"><li>کیف مردانه</li></a>
-                    <a href="#"><li>کت زنانه</li></a>
-                    <a href="#"><li>کت مردانه</li></a>
-                    <a href="#"><li>شعب</li></a>
-                    <a href="#"><li>درباره ما</li></a>
-
-                </ul>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo" aria-label="Leather Craft Home">
+                    <img src="images/logo.jpg" alt="Leather Craft Logo" width="40" height="40">
+                    <span class="logo-text" data-en="Sar Leather" data-fa="چرم سار">Sar Leather</span>
+                </a>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="/" class="nav-link" data-en="Home" data-fa="خانه">Home</a>
+                    <a href="men.html" class="nav-link" data-en="Men" data-fa="مردانه">Men</a>
+                    <a href="women.html" class="nav-link" data-en="Women" data-fa="زنانه">Women</a>
+                    <a href="about.html" class="nav-link" data-en="About Us" data-fa="درباره ما">About Us</a>
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-fa="تماس با ما">Contact</a>
+                </nav>
             </div>
+            <div class="header-right">
+                <button class="icon-button" id="languageToggle" title="Change language" aria-label="Change language">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="icon-button" title="Search" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-button" title="Account" aria-label="Account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="icon-button" title="Cart" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-header">
+            <a href="/" class="logo" aria-label="Leather Craft Home">
+                <img src="images/logo.jpg" alt="Leather Craft Logo" width="40" height="40">
+                <span data-en="Sar Leather" data-fa="چرم سار">Sar Leather</span>
+            </a>
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="/" class="mobile-nav-link" data-en="Home" data-fa="خانه">Home</a>
+            <a href="men.html" class="mobile-nav-link" data-en="Men" data-fa="مردانه">Men</a>
+            <a href="women.html" class="mobile-nav-link" data-en="Women" data-fa="زنانه">Women</a>
+            <a href="about.html" class="mobile-nav-link" data-en="About Us" data-fa="درباره ما">About Us</a>
+            <a href="contact.html" class="mobile-nav-link" data-en="Contact" data-fa="تماس با ما">Contact</a>
+        </nav>
     </div>
-<header>
-    <div class="container-fluid">
-       <div class="row menu">
-             <div class="h-100 col-5 col-sm-5 col-lg-6">
-                <button class="btn_translate" onclick="translateText()">ترجمه</button>
-                <ul class="w-100 h-100 m-0 p-0 d-none d-md-flex">
-                     <a class="active_hover" href="#"><li>زنانه<i class="m-1 fas fa-female" style="font-size:23px"></i></li></a>
-                     <a class="active_hover" href="#"><li>مردانه<i class="m-1 fas fa-male" style="font-size:23px"></i></li></a>
-                     <a class="active_hover" href="#"><li>شعب<i class='fas fa-code-branch' style='font-size:23px'></i></li></a>
-                     
-                    </ul>
-                <ul class="d-flex w-100 h-100 m-0 p-0 d-md-none">
-                     <span><i id="menu_bar" class="menu_bar fa fa-bars" style="font-size:25px"></i></span>
-                   
-                    </ul>
-             </div>
-             <div class="h-100 col-7 col-sm-7 col-lg-6">
-               
-                <span class="container_user_basket m-1">سبد خرید<i class="fa fa-shopping-basket" style="font-size:18px"></i><span class="m-1 user_basket">0</span></span>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero coming-soon-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Our Website is Coming Soon" data-fa="وب‌سایت ما به زودی تکمیل می‌شود">Our Website is Coming Soon</h1>
+                <p class="hero-subtitle" data-en="We are working on creating a premium leather experience for you" data-fa="ما در حال ایجاد یک تجربه چرم با کیفیت برای شما هستیم">We are working on creating a premium leather experience for you</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span class="countdown-label" data-en="Days" data-fa="روز">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span class="countdown-label" data-en="Hours" data-fa="ساعت">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span class="countdown-label" data-en="Minutes" data-fa="دقیقه">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span class="countdown-label" data-en="Seconds" data-fa="ثانیه">Seconds</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" data-en="Notify Me" data-fa="به من اطلاع بده">Notify Me</button>
+            </div>
+        </section>
+
+        <!-- Men's Collection -->
+        <section class="collection section bg-light" id="mens-collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Men's Collection" data-fa="کالکشن مردانه">Men's Collection</h2>
+                    <a href="men.html" class="view-all-link" data-en="View All" data-fa="مشاهده همه">
+                        View All
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
                 
-  
-                  <span>
-                    <a   href="#"><img class=" logo" src="images/logo.jpg" alt=""></a>
-                  </span>
-             </div>
-       </div>
-    </div>
-</header>
+                <div class="scroll-container">
+                    <div class="scroll-controls">
+                        <button class="scroll-btn scroll-left" data-target="men-collection" aria-label="Scroll left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="scroll-btn scroll-right" data-target="men-collection" aria-label="Scroll right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="products-scroll" id="men-collection">
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kafsh1.jpg" alt="Classic brown leather bifold wallet with multiple card slots" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Shoes" data-fa="کفش مردانه چرمی">Men's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="89">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kafsh4.jpg" alt="Premium leather briefcase with laptop compartment and brass hardware" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Shoes" data-fa="کفش مردانه چرمی">Men's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="249">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kamarband1.webp" alt="Classic brown leather belt with silver buckle" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Belt" data-fa="کمربند مردانه چرمی">Men's Leather Belt</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="79">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kif.jpg" alt="Slim leather card holder with multiple card slots" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Bag" data-fa="کیف مردانه چرمی">Men's Leather Bag</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="49">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kolah.jpg" alt="Handcrafted brown leather oxford shoes" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Cap" data-fa="کلاه مردانه چرمی">Men's Leather Cap</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="159">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/man_kafsh6.jpg" alt="Vintage style leather messenger bag with adjustable strap" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Shoes" data-fa="کفش مردانه چرمی">Men's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="189">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="Box_name mr-md-5 shadow">
-    <div class="bgcolor ">
-    </div>
-    <div class="cnt_name">
-        <span>شعب</span>
-    </div>
-   </div>
+        <!-- Women's Collection -->
+        <section class="collection section" id="womens-collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-en="Women's Collection" data-fa="کالکشن زنانه">Women's Collection</h2>
+                    <a href="women.html" class="view-all-link" data-en="View All" data-fa="مشاهده همه">
+                        View All
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-container">
+                    <div class="scroll-controls">
+                        <button class="scroll-btn scroll-left" data-target="women-collection" aria-label="Scroll left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="scroll-btn scroll-right" data-target="women-collection" aria-label="Scroll right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="products-scroll" id="women-collection">
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kafhs1.jpg" alt="Classic leather tote bag in tan with spacious interior" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Women's Leather Shoes" data-fa="کفش زنانه چرمی">Women's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="199">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kafsh2.jpg" alt="Slim leather belt for women with gold buckle" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Women's Leather Shoes" data-fa="کفش زنانه چرمی">Women's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="69">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kafsh4.jpg" alt="Leather crossbody bag with adjustable strap and gold hardware" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Women's Leather Shoes" data-fa="کفش زنانه چرمی">Women's Leather Shoes</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="159">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kif.jpg" alt="Large leather tote bag with zipper closure and inner pockets" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Bag" data-fa="کیف زنانه چرمی">women's Leather Bag</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="189">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kif2.jpg" alt="Compact leather wallet for women with multiple card slots and coin pocket" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Men's Leather Bag" data-fa="کیف زنانه چرمی">Women's Leather Bag</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="79">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                            <div class="product-image">
+                                <img src="images/woman_kif4.jpg" alt="Elegant leather clutch with detachable wrist strap" width="300" height="300" itemprop="image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title" itemprop="name" data-en="Women's Leather Bag" data-fa="کیف زنانه چرمی">Women's Leather Bag</h3>
+                                <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="129">----</span>
+                                </p>
+                                <meta itemprop="availability" content="https://schema.org/InStock" />
+                                <button class="btn btn-outline" data-en="Add to Cart" data-fa="افزودن به سبد خرید">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="container ">
+        <!-- Newsletter -->
+        <section class="newsletter section bg-light">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title" data-en="Subscribe to our newsletter" data-fa="در خبرنامه ما مشترک شوید">Subscribe to our newsletter</h2>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email" data-en-placeholder="Your email" data-fa-placeholder="ایمیل شما" aria-label="Email for newsletter">
+                        <button class="btn btn-primary" data-en="Subscribe" data-fa="اشتراک">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div class="row">
-  <div class="col-12 col-md-4 ">
-    <img class="logo_ w-100 h-100" src="images/logo.jpg" alt="">
-</div>
-
-<div class="container_shoobe col-12 col-md-8 bg-dar branches">
-    <p class="cooming_soon">به زودی این سامانه به طور کامل راه اندازی میشود...</p>
-      <h5 >تهران-پاسداران</h5>
-      <h5>فارس-شیراز</h5>
-      <h5>گیلان-رشت</h5>
-      <h5>مازندران-بابل</h5>
-      <h5>شماره تماس:09021076147,09100071730</h5>
-
-      
-
-</div>
-</div>
-
-</div>
-
-
-
-<d class="container p-5">
-    <div class="Box_name mr-md-5 shadow">
-        <div class="bgcolor ">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="logo footer-logo" aria-label="Leather Craft Home">
+                        <img src="images/logo.jpg" alt="Leather Craft Logo" width="40" height="40">
+                        <span>Sar Leather</span>
+                    </a>
+                    <p class="footer-text">Premium quality leather products handcrafted with care and attention to detail.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/leathercraft" aria-label="Facebook" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/leathercraft" aria-label="Instagram" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/leathercraft" aria-label="Twitter" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/leathercraft" aria-label="Pinterest" rel="noopener" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-en="Products" data-fa="محصولات">Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="bags.html" data-en="Leather Bags" data-fa="کیف های چرمی">Leather Bags</a></li>
+                        <li><a href="wallets.html" data-en="Leather Wallets" data-fa="کیف پول چرمی">Leather Wallets</a></li>
+                        <li><a href="belts.html" data-en="Leather Belts" data-fa="کمربند چرمی">Leather Belts</a></li>
+                        <li><a href="shoes.html" data-en="Leather Shoes" data-fa="کفش چرمی">Leather Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-en="About" data-fa="درباره ما">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="Our Story" data-fa=" داستان ما">Our Story</a></li>
+                        <li><a href="craftsmanship.html" data-en="Craftsmanship" data-fa="کاردستی">Craftsmanship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-en="Contact" data-fa="تماس با ما">Contact</h3>
+                    <address class="footer-contact">
+                        <ul>
+                            <li data-en="Tehran-Pasdaran" data-fa="تهران-پاسداران">Tehran-Pasdaran</li>
+                            <li data-en="Mazandaran-Babol" data-fa="مازندران-بابل">Mazandaran-Babol</li>
+                            <li data-en="Gilan-Rasht" data-fa="گیلان-رشت">Gilan-Rasht</li>
+                            <li data-en="Fars-Shiraz" data-fa="فارس-شیراز">Fars-Shiraz</li>
+                            <li><a href="mailto:info@leathercraft.com">info@leathercraft.com</a></li>
+                            <li><a href="tel:+15551234567">09021076147</a></li>
+                            <li><a href="tel:+15551234567">09100071730</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2025 Leather Craft. All rights reserved." data-fa="© ۱۴۰۴ چرم سار. تمامی ح  data-en="© 2025 Sar Leather. All rights reserved." data-fa="© ۱۴۰۴ چرم کرافت. تمامی حقوق محفوظ است.">© 2025 Leather Craft. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="shipping.html">Shipping & Returns</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
         </div>
-        <div class="cnt_name">
-            <span>مردانه</span>
-        </div>
-       </div>
-     <div class="wrapper">
-        <i id="left" class="d-none d-xl-inline fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh1.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-          
+    </footer>
 
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh2.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh3.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-         
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh4.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kif.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh5.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kafsh6.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kolah.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کلاه چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kif8.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kamarband1.webp" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کمربند چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/man_kamarband2.webp" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کمربند چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-
-        </ul>
-        <i id="right" class=" fa-solid fa-angle-right"></i>
-      </div>
-<div class="container">
-    
-</div>
-   </d>
-
-
-   <d class="container p-5">
-    <div class="Box_name mr-md-5 shadow">
-        <div class="bgcolor ">
-        </div>
-        <div class="cnt_name">
-            <span>زنانه</span>
-        </div>
-       </div>
-     <div class="wrapper">
-        <i id="left" class="d-none d-xl-inline fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kafhs1.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kafsh2.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kafsh3.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kafsh4.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کفش چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kif.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kif2.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kif3.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-          <li class="card ">
-            <div class="container_bg"></div>
-            <div class="img"><img src="images/woman_kif4.jpg" alt="img" draggable="false"></div>
-            <div class="contaner_child_cart">
-              <h6>کیف چرمی</h6>
-              <h6>قیمت:#تومان</h6>
-            </div>
-            <div class="contaner_child_cart">
-                 <button class="blue">اطلاعات بیشتر</button>
-                 <button class="green">افزودن به سبد خرید +</button>
-            </div>
-          </li>
-
-
-
-
-
-         
-        </ul>
-        <i id="right" class=" fa-solid fa-angle-right"></i>
-      </div>
-<div class="container">
-
-</div>
-   </d>
-
-
-
-
-
-<footer>
-    
-    <div class="container_fluid">
-        <div class="row container_footer m-0 p-0">
-             
-          <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-4 footer_item footer_discribe">
-              <ul class="ul">
-                  <h3 >چرم سآر </h3>
-                 
-                  <li><i class="fa fa-phone" aria-hidden="true"></i>09021076147</li>
-                  <li><i class="fa fa-phone" aria-hidden="true"></i>09100071730</li>
-                  <li><i class="fa fa-envelope" aria-hidden="true"></i><span>sar.leather@gmail.com</span> </li>
-                  
-               
-                 </ul>
-         
-       
-
-         </div>
-         <div class="col-4 col-sm-6 col-md-6 col-lg-4 col-xl-4 footer_item footer_discribe">
-            
-             <ul class="ul">
-              <h3 > پشتیبانی</h3>
-              <a href="#"><li>صفحه اصلی</li></a>
-              <a href="#"><li> شعب</li></a>
-              <a href="#"><li>درباره ما</li></a>
-             </ul>
-
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer_item footer_discribe">
-             
-          <div>
-              
-              <h3>دست در دست هم تا بی نهایت برای جهان✌</h3>
-            </div>
-              
-              <p class="footer_prag">
-                در جستجوی کیف و کفش چرمی بی‌نظیری؟ ما با استفاده از مواد اولیه برتر و تکنیک‌های هنری دقیق، کیف‌ و کفش هایی را تولید می‌کنیم که نه تنها زیبایی دارند بلکه عمر طولانی نیز دارند.                              
-              </p>
-
-      </div>
-        </div>
-               
-
-      </div>
-     
-      <div class="container_fluid container_footer_end">
-               <p>کلیه حقوق مادی و معنوی برای چرم سآر  می باشد.</p>
-               <div class="container_icon_footer">
-                    <span><i class="fab fa-telegram"></i></span>
-                    <span><i class="fab fa-instagram" aria-hidden="true"></i></span>
-                    <span><i class="fab fa-twitter" aria-hidden="true"></i></span>  
-               </div>
-              
-              </div>
-</footer>
-
-<script src="js/index.js"></script>
-<script>
-    let currentLang = "fa"; // Default language is English
-
-    async function translateText() {
-        const targetLang = currentLang === "fa" ? "en" : "fa";
-        const elements = document.body.querySelectorAll("*");
-        for (let element of elements) {
-            if (element.hasChildNodes()) {
-                element.childNodes.forEach(async (node) => {
-                    if (node.nodeType === 3) { // Check for text nodes
-                        let text = node.textContent.trim();
-                        if (text) { // Only translate non-empty text nodes
-                            let translatedText = await fetchTranslation(text, targetLang);
-                            node.textContent = translatedText;
-                        }
-                    }
-                });
-            }
-        }
-        currentLang = targetLang; // Toggle language
-    }
-    
-    async function fetchTranslation(text, targetLang) {
-        const sourceLang = currentLang;
-        const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`;
-        try {
-            let response = await fetch(url);
-            let data = await response.json();
-            return data.responseData.translatedText;
-        } catch (error) {
-            console.error("Translation error:", error);
-            return text;
-        }
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
