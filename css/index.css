@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(../fonts/A-Iranian-Sans/AIranianSans.woff);
+    src: url(fonts/A-Iranian-Sans/AIranianSans.woff);
 }
 @keyframes scaleUpAndDown {
     0%, 100% {
@@ -332,6 +332,16 @@ ul{
 .account:hover{
   color: white;
   text-decoration: none;
+}
+.logo_{
+  border-radius: 10px;
+}
+.cooming_soon{
+  font-size: 20px;
+  text-align: center;
+}
+h5{
+  text-align: center;
 }
 .wrapper .carousel {
   display: grid;
