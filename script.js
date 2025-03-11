@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Countdown timer for coming soon section
+  /*
   const launchDate = new Date()
   launchDate.setDate(launchDate.getDate() + 30) // Set launch date to 30 days from now
 
@@ -120,5 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCountdown()
   // Update every second
   setInterval(updateCountdown, 1000)
+  */
 })
 
